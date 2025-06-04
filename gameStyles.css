@@ -1,0 +1,85 @@
+/* CSS reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+#main-container {
+    height: 100%;
+    width: 100%;
+
+    background-image: url("resources/sala.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+figure {
+    position: absolute;
+}
+
+figure > img {
+    width: 100%;
+    height: 100%;
+}
+
+#figure-phone {
+    width: 110px;
+    
+    top: 80%;
+    left: 25%;
+}
+
+#figure-ball {
+    width: 80px;
+
+    top: 53%;
+    left: 75%;
+}
+
+#figure-journal {
+    width: 60px;
+
+    top: 42%;
+    left: 33%;
+
+    transform: rotate(10deg);
+}
+
+#form-answer {
+    position: absolute;
+
+    top: 90%;
+    left: 65%;
+
+    display: flex;
+    gap: 15px;
+}
+
+#input-answer {
+    height: 30px;
+    width: 180px;
+
+    text-align: center;
+
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+    border: none;
+}
+
+#input-submit {
+    height: 30px;
+    width: 50px;
+    
+    text-align: center;
+
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+    border: none;
+}

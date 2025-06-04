@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gameStyles.css">
+
     <title>Game</title>
 </head>
 <body>
-    <div id="container">
-        <div id="phone">
-            <img src="" alt="">
-        </div>
+    <div id="main-container">
+        <figure id="figure-phone"><img src="resources/phone.png" alt="Phone"></figure>
 
-        <div id="ball">
-            <img src="" alt="">
-        </div>
+        <figure id="figure-ball"><img src="resources/ball.png" alt="Soccer Ball"></figure>
 
-        <div id="jornal">
-            <img src="" alt="">
-        </div>
+        <figure id="figure-journal"><img src="resources/journal.webp" alt="Journal"></figure>
+
+        <form action="processa.php" method="get" id="form-answer">
+            <input type="text" name="answer" id="input-answer" placeholder="Type your answer here..." required>
+            <input type="submit" value="Check" id="input-submit">
+        </form>
     </div>
 </body>
 </html>
