@@ -12,7 +12,7 @@ phoneFigure.addEventListener("click", () => {
         morseAudio.play();
 
         // After the audio is played, the variable will turn false
-        setTimeout(morseAudio.duration, () => {isAudioplaying = false});
+        setTimeout(morseAudio.duration + 1, () => {isAudioplaying = false});
     };
 });
 
