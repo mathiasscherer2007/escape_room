@@ -16,17 +16,17 @@
 
         <figure id="figure-journal"><img src="resources/journal.webp" alt="Journal"></figure>
 
-        <form action="process.php" method="get" id="form-answer">
+        <form action="process.php" method="post" id="form-answer">
             <input type="text" name="answer" id="input-answer" placeholder="Type your answer here..." required>
             <input type="submit" value="Check" id="input-submit">
         </form>
     </div>
 
     <div id="pop-up">
-        <h2>You clicked</h2>
-        <p>Check the console</p>
+        <h2 id="title-pop-up">You clicked</h2>
+        <p id="text-pop-up">Check the console</p>
         
-        <p id="close-p">X</p>
+        <p id="close-pop-up">X</p>
     </div>
 </body>
 </html>

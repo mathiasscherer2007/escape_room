@@ -27,5 +27,33 @@ ballFigure.addEventListener("click", () => {
 const journalFigure = document.getElementById("figure-journal");
 
 journalFigure.addEventListener("click", () => {
-    
+    console.log();
+
+    displayPopUp("You cliked it", "Check console");
 });
+
+// Close pop-up
+let closePopUp = document.getElementById("close-pop-up");
+
+closePopUp.addEventListener("click", () => {
+    displayPopUp();
+});
+
+// Functions
+function displayPopUp(title = "", text = "") {
+    let popUp = document.getElementById("pop-up");
+
+    if(popUp.classList.contains("show")) {
+        popUp.classList.remove("show");
+        return;
+    } else {
+        popUp.classList.add("show");
+    }
+
+    let popUpTitle = document.getElementById("title-pop-up");
+
+    let popUpText = document.getElementById("text-pop-up");
+
+    popUpTitle.textContent = title;
+    popUpText.textContent = text;
+};
