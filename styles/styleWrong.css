@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Kolker Brush", cursive;
-    font-size: 60px;
+    font-size: 70px;
 }
 
 html, body, .container{
@@ -18,9 +18,11 @@ html, body, .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../resources/menino_ney.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(../resources/sad.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: black;
 }
 
 .central{
@@ -29,14 +31,24 @@ html, body, .container{
     justify-content: center;
     flex-direction: column;
     text-shadow: 1px 1px 3px red;
-    background-color: rgba(255, 255, 255, 0.01);
     border-radius: 100%;
 }
 
-h1{
-    font-size: 3em;
+h2{
+    font-size: 2em;
 }
 
-a{
-    color: black;
+p{
+    font-size: 1.3em;
+}
+
+button{
+    border-radius: 100%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
 }

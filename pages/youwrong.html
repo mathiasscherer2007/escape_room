@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Você errou</title>
-</head>
-<body>
-    <div id="container">
-        <h2>Você errou, tente novamente</h2>
-        <button onclick="location.replace('resposta.html')">Responder Denovo</button>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Você errou</title>
+        <link rel="stylesheet" href="../styles/styleWrong.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="central">
+                <h2>O Assassino Continua um Mistério...</h2>
+                <p>Você errou!</p>
+                <button onclick="location.replace('resposta.html')">De Novo</button>
+                <audio autoplay loop>
+                    <source src="../resources/sad.mp3">
+                </audio>
+            </div>
+        </div>
+    </body>
 </html>

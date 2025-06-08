@@ -18,25 +18,13 @@ html, body, .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../resources/menino_ney.png);
-    background-size: cover;
+    background-image: url(../resources/neymarJail.png);
+    background-size: contain;
     background-position: center;
-}
-
-.central{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-shadow: 1px 1px 3px red;
-    background-color: rgba(255, 255, 255, 0.01);
-    border-radius: 100%;
+    background-repeat: no-repeat;
 }
 
 h1{
     font-size: 3em;
-}
-
-a{
-    color: black;
+    text-shadow: 1px 1px 3px green;
 }
