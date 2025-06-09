@@ -8,11 +8,16 @@ phoneFigure.addEventListener("click", () => {
     // Checks if the audio is already playing, so it will not have duplicates
     if(!isAudioplaying) {
         isAudioplaying = true;
+        phoneFigure.classList.add("playing");
 
         morseAudio.play();
-
+        
         // After the audio is played, the variable will turn false
-        setTimeout(morseAudio.duration + 1, () => {isAudioplaying = false});
+        setTimeout(() => {
+            isAudioplaying = false; 
+            phoneFigure.classList.remove("playing");
+            phoneFigure.style.animation = "";
+        }, (parseInt(morseAudio.duration)+1)*1000);
     };
 });
 
