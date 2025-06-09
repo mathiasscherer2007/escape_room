@@ -1,7 +1,7 @@
 // Phone Enigma
 const phoneFigure = document.getElementById("figure-phone");
 
-let morseAudio = new Audio("resources/morsecode.wav");
+let morseAudio = new Audio("resources/audios/morsecode.wav");
 let isAudioplaying = false;
 
 phoneFigure.addEventListener("click", () => {
