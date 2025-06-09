@@ -89,7 +89,6 @@ figure > img {
 /* POP-UP */
 
 #pop-up {
-    display: block;
     position: absolute;
 
     top: 50%;
@@ -102,13 +101,22 @@ figure > img {
 
     padding: 10px;
     padding-right: 30px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+}
+
+#pop-up.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 #pop-up > h2 {
     margin: 5px 0;
 }
 
-#close-p {
+#close-pop-up {
     position: absolute;
 
     top: 5px;
@@ -122,4 +130,8 @@ figure > img {
     background-color: red;
     color: pink;
     border-radius: 50%;
+}
+
+#close-pop-up:hover {
+    cursor: pointer;
 }
