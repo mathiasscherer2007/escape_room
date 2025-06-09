@@ -104,7 +104,7 @@ figure > img {
 
     opacity: 0;
     visibility: hidden;
-    transition: opacity 1s ease-out, visibility 1s ease-out;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
 #pop-up.show {
@@ -119,8 +119,8 @@ figure > img {
 #close-pop-up {
     position: absolute;
 
-    top: 5px;
-    left: 85%;
+    top: 15px;
+    right: -5px;
 
     width: 20px;
     aspect-ratio: 1/1;
@@ -130,6 +130,8 @@ figure > img {
     background-color: red;
     color: pink;
     border-radius: 50%;
+
+    transform: translate(-50%, -50%);
 }
 
 #close-pop-up:hover {
