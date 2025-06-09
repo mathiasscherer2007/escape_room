@@ -16,10 +16,18 @@
 
         <figure id="figure-journal"><img src="resources/images/journal.webp" alt="Journal"></figure>
 
-        <form action="process.php" method="get" id="form-answer">
+        <form action="process.php" method="post" id="form-answer">
             <input type="text" name="answer" id="input-answer" placeholder="Quem é o assassino?" required>
             <input type="submit" value="Check" id="input-submit">
         </form>
     </div>
+
+    <div id="pop-up">
+        <h2 id="title-pop-up">You clicked</h2>
+        <p id="text-pop-up">Check the console</p>
+
+        <p id="close-pop-up">X</p>
+    </div>
+
 </body>
 </html>

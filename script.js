@@ -26,18 +26,35 @@ ballFigure.addEventListener("click", () => {
 // Journal Enigma
 const journalFigure = document.getElementById("figure-journal");
 
-const popUp = document.createElement("div");
-popUp.id = "pop-up";
-popUp.innerHTML = 
-    `<h2>O presidente foi morto!</h2>
-    <p>No jornal está escrito, "O console é a resposta".</p>
-    <p id="close-p">X</p>`;
-
 journalFigure.addEventListener("click", () => {
-    document.appendChild(popUp);
+    
+     console.log();
 
-    const closePopUp = document.getElementById("close-p");
-    closePopUp.addEventListener("click", () => {
-        document.removeChild(popUp);
-    })
+    displayPopUp("You cliked it", "Check console");
 });
+
+// Close pop-up
+let closePopUp = document.getElementById("close-pop-up");
+
+closePopUp.addEventListener("click", () => {
+    displayPopUp();
+});
+
+// Functions
+function displayPopUp(title = "", text = "") {
+    let popUp = document.getElementById("pop-up");
+
+    if(popUp.classList.contains("show")) {
+        popUp.classList.remove("show");
+        return;
+    } else {
+        popUp.classList.add("show");
+    }
+
+    let popUpTitle = document.getElementById("title-pop-up");
+
+    let popUpText = document.getElementById("text-pop-up");
+
+    popUpTitle.textContent = title;
+    popUpText.textContent = text;
+};
