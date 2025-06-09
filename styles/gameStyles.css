@@ -28,6 +28,11 @@ figure > img {
     height: 100%;
 
     filter: drop-shadow(0 0 10px rgba(104, 0, 95, 0.9));
+    transition: transform 0.5s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.2);
 }
 
 #figure-phone {

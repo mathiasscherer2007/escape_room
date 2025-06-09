@@ -1,10 +1,10 @@
 <?php
 
-$realAnswer = "Neymar Junior";
+$realAnswer = "neymar";
 
-$answer = $_GET["answer"];
+$answer = strtolower($_POST["answer"]);
 
-if($realAnswer == $answer) {
+if(str_contains($answer, $realAnswer)) {
     header("Location: pages/congratulations.html");
 } else {
     header("Location: pages/youwrong.html");

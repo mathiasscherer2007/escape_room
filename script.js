@@ -34,7 +34,7 @@ const journalFigure = document.getElementById("figure-journal");
 journalFigure.addEventListener("click", () => {
     console.log("MjIyIG1pbGhhcmVzIGRlIG1pbGhhcmVz");
 
-    displayPopUp("log(4)/log(64)", "Check the console");
+    displayPopUp("log(4)/log(64)", "Olhe o console");
 });
 
 // Close pop-up
