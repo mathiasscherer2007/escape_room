@@ -26,18 +26,6 @@ ballFigure.addEventListener("click", () => {
 // Journal Enigma
 const journalFigure = document.getElementById("figure-journal");
 
-const popUp = document.createElement("div");
-popUp.id = "pop-up";
-popUp.innerHTML = 
-    `<h2>O presidente foi morto!</h2>
-    <p>No jornal está escrito, "O console é a resposta".</p>
-    <p id="close-p">X</p>`;
-
 journalFigure.addEventListener("click", () => {
-    document.appendChild(popUp);
-
-    const closePopUp = document.getElementById("close-p");
-    closePopUp.addEventListener("click", () => {
-        document.removeChild(popUp);
-    })
+    
 });

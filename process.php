@@ -5,9 +5,9 @@ $realAnswer = "Neymar Junior";
 $answer = $_GET["answer"];
 
 if($realAnswer == $answer) {
-    header("Location: pages/congratulations.html");
+    header("Location: congratulations.html");
 } else {
-    header("Location: pages/youwrong.html");
+    header("Location: youwrong.html");
 };
 
 ?>
