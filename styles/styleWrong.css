@@ -18,7 +18,7 @@ html, body, .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../resources/sad.png);
+    background-image: url(../resources/images/sad.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
